@@ -14,4 +14,15 @@ defmodule Day01Test do
 
     assert Day01.part1(test_input) == 11
   end
+
+  test "part 1 test two" do
+    test_input =
+      """
+      3   4
+      4   3
+      2   5
+      """
+
+    assert Day01.part1(test_input) == 3
+  end
 end
