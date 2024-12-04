@@ -30,4 +30,23 @@ defmodule Day01Test do
     {:ok, input} = File.read("lib/Day01/input.txt")
     assert Day01.part1(input) == 1_590_491
   end
+
+  test "part 2" do
+    test_input =
+      """
+      3   4
+      4   3
+      2   5
+      1   3
+      3   9
+      3   3
+      """
+
+    assert Day01.part2(test_input) == 31
+  end
+
+  test "part 2 solution" do
+    {:ok, input} = File.read("lib/Day01/input.txt")
+    assert Day01.part2(input) == 22_588_371
+  end
 end
