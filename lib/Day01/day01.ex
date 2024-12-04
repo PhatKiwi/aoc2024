@@ -14,6 +14,6 @@ defmodule Day01 do
 
   defp calculate(sortedList1, sortedList2) do
     Enum.zip(sortedList1, sortedList2)
-    |> Enum.reduce(0, fn {a, b}, acc -> acc + (b - a) end)
+    |> Enum.reduce(0, fn {a, b}, acc -> acc + abs(a - b) end)
   end
 end
