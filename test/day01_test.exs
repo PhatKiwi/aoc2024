@@ -25,4 +25,9 @@ defmodule Day01Test do
 
     assert Day01.part1(test_input) == 3
   end
+
+  test "part 1 solution" do
+    {:ok, input} = File.read("lib/Day01/input.txt")
+    assert Day01.part1(input) == 1_590_491
+  end
 end
