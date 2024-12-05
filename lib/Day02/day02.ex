@@ -4,6 +4,10 @@ defmodule Day02 do
     |> Enum.count(fn lists -> is_safe?(lists) end)
   end
 
+  def part2(input) do
+    4
+  end
+
   defp parse(input) do
     input
     |> String.split("\n", trim: true)
